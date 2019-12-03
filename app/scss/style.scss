@@ -1,3 +1,25 @@
 @import '../scss/global';
-@import 'vars';
+@import '../scss/vars';
 
+#particles-js{
+  height: 100vh;
+  background-color: #001e69;
+}
+
+.header{
+  background-color: transparent;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(4, 243, 24);
+  // h1 {
+  //   margin-bottom: 3.5rem;
+  //   span {
+  //    background-size:  100% 15%;
+  //    background-repeat: repeat-x;
+  //    background-position: left 0% bottom 10%;
+  //    background-image: linear-gradient(179deg,rgb(254, 97, 158) 0%, rgb(254, 97, 158) 50%,transparent 54%, transparent 100%);
+  //   }
+  // }
+}
