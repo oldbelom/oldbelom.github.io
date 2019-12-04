@@ -1,0 +1,310 @@
+@media (max-width: 1400px) {
+  .routes__item {
+
+    h3 {
+      margin-top: 20%;
+      font-size: 25px;
+    }
+
+    span {
+      margin-top: 15%;
+      font-size: 18px;
+      line-height: 25px;
+      max-width: 80%;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  #menu__list {
+    justify-content: space-around;
+  }
+
+  .header h1 {
+    span {
+      display: inline-block;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 1164px) {
+  .team__item{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .about__inner {
+
+    .about__item {
+      flex-basis: 100%;
+      margin: 15px 0;
+    }
+
+    .about__item-img {
+      flex-basis: calc(50% - 15px);
+    }
+  }
+  .routes__item {
+    span {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .header__inner {
+    background-color: #000;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header__inner.fixed {
+    a {
+      color: #fff;
+    }
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+    ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #000;
+      margin-top: 0;
+
+      li {
+        width: 100%;
+        border-bottom: none;
+      }
+
+      li:nth-child(4) {
+        display: none;
+      }
+
+      a {
+        line-height: 40px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .menu__btn {
+    display: block;
+    position: relative;
+  }
+
+  .menu__border {
+    display: none;
+  }
+
+  #menu__list {
+    display: none;
+  }
+
+  #menu__list li.active {
+    background-color: $main-color;
+
+    .menu__border {
+      display: none;
+    }
+  }
+
+  .menu__title {
+    display: block;
+  }
+
+  .header h1 {
+    font-size: 40px;
+
+    span {
+      font-size: 60px;
+    }
+  }
+
+  .slick-prev {
+    left: 20px;
+  }
+
+  .slick-next {
+    right: 20px;
+  }
+
+  .facts {
+    padding: 30px 0 20px;
+  }
+
+  .facts__inner {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .facts__item {
+    flex-basis: 50%;
+    margin-bottom: 60px;
+  }
+  .routes__item {
+    flex-basis: 50%;
+
+    h3 {
+      margin-top: 30%;
+      font-size: 25px;
+    }
+  
+    span {
+      margin-top: 20%;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 70%;
+    }
+    &-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    &:hover .routes__item-overlay {
+      opacity: 1;
+    }
+  }
+  .review__slider-item {
+    margin-top: 20px;
+  }
+  .contacts__info {
+    right: 10%;
+  }
+}
+
+@media (max-width: 720px) {
+
+  .about__inner {
+    p.about__item {
+      font-size: 18px;
+      text-align: left;
+    }
+
+    .about__item {
+      flex-basis: 100%;
+
+      img {
+        max-width: 100%;
+      }
+
+    }
+
+    .about__item-img {
+      flex-basis: 100%;
+    }
+  }
+
+  .title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .routes__item {
+    span {
+      font-size: 15px;
+      line-height: 20px;
+      max-width: 80%;
+    }
+  }
+  .services__item{
+    h4{
+      padding-top: 20px;
+    }
+  }
+  .parallax-window {
+    padding: 40px 0px 70px;
+  }
+  .review__slider-item {
+    margin-top: 50px;
+    text-align: center;
+  
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      line-height: 25px;
+    }
+  }
+  .contacts__info {
+    right: 20px;
+    width: 200px;
+    h3 {
+      margin-bottom: 30px;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 30px;
+
+    span {
+      font-size: 50px;
+    }
+  }
+
+  .facts__inner {
+    padding-top: 20px;
+  }
+
+  .facts__item {
+    flex-basis: 150px;
+    width: 100%;
+    text-align: center;
+
+    &-text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .numscroller {
+      font-size: 50px;
+      padding: 20px 0;
+    }
+  }
+  .routes__item {
+    flex-basis: 100%;
+
+    h3 {
+      margin-top: 20%;
+      font-size: 30px;
+    }
+  
+    span {
+      margin-top: 10%;
+    }
+  }
+  .contacts__map{
+    display: none;
+  }
+  .contacts__info {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    right: 0;
+    top: 100px;
+    height: auto;
+    a {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 961px) {
+  #menu__list {
+    display: flex !important;
+  }
+}

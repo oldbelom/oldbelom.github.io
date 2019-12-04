@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FitneSS</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header" style="background-image: url(images/header-bg.jpg);">
+    <div class="header__top">
+      <a class="header__logo" href="#">
+        <img src="images/logo.png" alt="FitneSS">
+      </a>
+      <nav class="menu">
+        <div class="menu__btn">
+          <div class="menu__btn-line"></div>
+          <div class="menu__btn-line"></div>
+          <div class="menu__btn-line"></div>
+        </div>
+        <ul class='menu__left'>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Секции</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="menu__right">
+          <li><a href="#">Вход</a></li>
+          <li><a href="#">Регистрация</a></li>
+          <li><a href="#">Выбрать план</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__banner">
+      <div class="container">
+        <div class="header__banner-inner">
+          <h1>Сделай своё тело <span>идеальным</span></h1>
+          <p>Именно сейчас лучшее время чтобы начать!</p>
+          <a href="#" class="btn">Начать</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="order">
+      <div class="order__img">
+        <picture>
+          <source type="image/webp"
+            srcset="images/form-img.webp 1x, images/form-img@2x.webp 2x, images/form-img@3x.webp 3x">
+          <img src="images/form-img.jpg" srcset="images/form-img@2x.jpg 2x, images/form-img@3x.jpg 3x" alt="FitneSS">
+        </picture>
+      </div>
+      <div class="order__content">
+        <p>7 дней бесплатно</p>
+        <h3 class="title">Онлайн бронирование</h3>
+        <form>
+          <select required>
+            <option value="">1 Человек</option>
+            <option value="">2 Человека</option>
+            <option value="">3 Человека</option>
+            <option value="">4 Человека</option>
+          </select>
+          <label class="date">
+            <input type="text" placeholder="Дата" data-toggle="datepicker" required>
+          </label>
+          <label class="time">
+            <input type="text" placeholder="Время" required>
+          </label>
+          <input type="text" placeholder="Имя" required>
+          <input type="tel" placeholder="Телефон" required>
+          <input type="email" placeholder="Email" required>
+          <button class="btn" type="submit">Попробовать</button>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about__info">
+        <h2 class="title">Почему <span>fitness</span> ?</h2>
+        <p>"ФИТНЕСС" - одна из крупнейших спортивных сетей Росссии, к вашим услугам 96 центров. С нами вы можете быть
+          уверены в безопасности своего здоровья – все наши тренеры являются дипломированными специалистами с высшим
+          физкультурно-оздоровительным образованием. У нас более 300 000 клиентов, и к каждому мы нахдим индивидуальный
+          подход! </p>
+        <p class="about__info-text">Нам доверяют свое здоровье самые разные люди: от профессиональных спортсменов и
+          медийных персон до менеджеров и
+          домохозяек!
+        </p>
+        <a href="#" class="btn">Записаться</a>
+        <img class="about__img" src="images/about-bg.png" alt="FitneSS">
+      </div>
+    </div>
+  </section>
+
+  <section class="programs">
+    <div class="container">
+      <h2 class="title">Наши <span>программы</span></h2>
+      <p>В нашем клубе найдется программа для каждого</p>
+      <div class="programs__inner">
+        <div class="programs__item">
+          <div class="programs__item-img">
+            <img src="images/program1.jpg" alt="Basic Crossfit">
+          </div>
+          <div class="programs__item-content">
+            <div class="programs__item-title">
+              Базовый кроссфит
+            </div>
+            <div class="programs__item-text">
+              Раскрой свой потенциал с настоящими профессионалами кроссфита!
+            </div>
+            <a href="#" class="btn">Записаться</a>
+          </div>
+        </div>
+        <div class="programs__item">
+          <div class="programs__item-img">
+            <img src="images/program2.jpg" alt="Fitness Studio">
+          </div>
+          <div class="programs__item-content">
+            <div class="programs__item-title">
+              Студия фитнеса
+            </div>
+            <div class="programs__item-text">
+              Тренируйтесь в фитнес-группах или с персональным тренером в нашем тренажерном зале.
+            </div>
+            <a href="#" class="btn">Записаться</a>
+          </div>
+        </div>
+        <div class="programs__item">
+          <div class="programs__item-img">
+            <img src="images/program3.jpg" alt="Yoga Classes">
+          </div>
+          <div class="programs__item-content">
+            <div class="programs__item-title">
+              Занятия йогой
+            </div>
+            <div class="programs__item-text">
+              Как насчёт йоги? Если у вас есть желание попробовать, у нас есть специальная программа.
+            </div>
+            <a href="#" class="btn">Записаться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banner" style="background-image: url(images/banner.jpg);">
+    <span>Вами займутся</span>
+    <h3>лучшие тренеры</h3>
+    <a href="#" class="btn">Проверить</a>
+  </section>
+
+  <section class="team">
+    <div class="container">
+      <h3 class="title">Наши <span>тренеры</span></h3>
+      <p>Наши тренеры фитнес-программ и тренажёрного зала с радостью помогут Вам сделать своё тело сильным и красивым,
+        избежать ошибок и не пасть духом ! К каждому из них можно записаться на персональные занятия.
+        Клуб "FinteSS" руководствуется самыми высокими стандартами в подборе команды, обучении тренеров, предоставлении
+        в
+        клубах фитнес-программ мирового уровня. Все тренеры проходят специальное обучение, участвуят в регулярных
+        тренингах и сертификациях с последующей аттестацией для работы в клубах.</p>
+      <div class="team__inner">
+        <div class="team__item">
+          <div class="team__item-img">
+            <img src="images/team1.png" alt="Sarra Miller">
+          </div>
+          <div class="team__item-info">
+            <div class="team__item-name">
+              Елена Иванова
+            </div>
+            <div class="team__item-job">
+              Инструктор по йоге
+            </div>
+            <div class="team__item-text">
+              Опытный инструктор с 15-летним стажем преподавания хатха-йоги
+            </div>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-img">
+            <img src="images/team2.png" alt="John Doe">
+          </div>
+          <div class="team__item-info">
+            <div class="team__item-name">
+              Максим Евдокимов
+            </div>
+            <div class="team__item-job">
+              Тренер по бодибилдингу
+            </div>
+            <div class="team__item-text">
+              Бронзовый призёр Европейсrого чемпионата "Strongman 2015"
+            </div>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-img">
+            <img src="images/team3.png" alt="Sarra Miller">
+          </div>
+          <div class="team__item-info">
+            <div class="team__item-name">
+              Андрей Победюк
+            </div>
+            <div class="team__item-job">
+              Фитнес-тренер
+            </div>
+            <div class="team__item-text">
+              Сертифицированный преподаватель высшей категории
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="media">
+    <div class="media__item" style="background-image: url(images/media2.jpg);">
+      <span>5 первых занятий</span>
+      <h4>Бесплатно</h4>
+      <a href="#" class="btn">Записаться</a>
+    </div>
+    <div class="media__item" style="background-image: url(images/media1.jpg);">
+      <span>Позвони и запишись</span>
+      <h4>957 547 4545</h4>
+      <a href="#" class="btn">Записаться</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a class="footer__logo" href="#">
+            <img src="images/logo.png" alt="FitneSS">
+          </a>
+          <p class="footer__info-text">
+            Мы верим: занятия фитнесом — это не просто тренировки для поддержания формы. Новые фитнес-технологии
+            позволяют по-новому взглянуть на достижение целей, а инфраструктура спортклуба — полезно организовать время.
+          </p>
+          <div class="footer__info-social">
+            <div>Мы в соцсетях:</div>
+            <ul>
+              <li><a class="icon-facebook-f" href="#"></a></li>
+              <li><a class="icon-twitter" href="#"></a></li>
+              <li><a class="icon-instagram" href="#"></a></li>
+              <li><a class="icon-pinterest-p" href="#"></a></li>
+              <li><a class="icon-google-plus" href="#"></a></li>
+              <li><a class="icon-youtube-play" href="#"></a></li>
+              <li><a class="icon-dribbble" href="#"></a></li>
+            </ul>
+          </div>
+          <form class="footer__form">
+            <input type="text" placeholder="Ваш Email ...">
+            <button class="btn">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer__blogs">
+          <div class="footer__blogs-title">
+            Блог
+          </div>
+          <a href="#" class="footer__blogs-item">
+            <div class="footer__blog-img">
+              <img src="images/blog1.jpg" alt="blog">
+            </div>
+            <div class="footer__blogs-text">
+              Важность разминки перед занятиями йогой
+            </div>
+          </a>
+          <a href="#" class="footer__blogs-item">
+            <div class="footer__blog-img">
+              <img src="images/blog2.jpg" alt="blog">
+            </div>
+            <div class="footer__blogs-text">
+              Системный подход к тренировкам творит чудеса
+            </div>
+          </a>
+          <a href="#" class="footer__blogs-item">
+            <div class="footer__blog-img">
+              <img src="images/blog3.jpg" alt="blog">
+            </div>
+            <div class="footer__blogs-text">
+              Всё о правильном питании и подсчёте калорий
+            </div>
+          </a>
+        </div>
+        <div class="footer__insta">
+          <div class="footer__insta-title">
+            Instagram
+          </div>
+          <div class="footer__insta-gallery imglist">
+            <a href="images/insta1-big.jpg" data-fancybox="images">
+              <img src="images/insta1.jpg" alt="insta">
+            </a>
+            <a href="images/insta2-big.jpg" data-fancybox="images">
+              <img src="images/insta2.jpg" alt="insta">
+            </a>
+            <a href="images/insta3-big.jpg" data-fancybox="images">
+              <img src="images/insta3.jpg" alt="insta">
+            </a>
+            <a href="images/insta4-big.jpg" data-fancybox="images">
+              <img src="images/insta4.jpg" alt="insta">
+            </a>
+            <a href="images/insta5-big.jpg" data-fancybox="images">
+              <img src="images/insta5.jpg" alt="insta">
+            </a>
+            <a href="images/insta6-big.jpg" data-fancybox="images">
+              <img src="images/insta6.jpg" alt="insta">
+            </a>
+            <a href="images/insta7-big.jpg" data-fancybox="images">
+              <img src="images/insta7.jpg" alt="insta">
+            </a>
+            <a href="images/insta8-big.jpg" data-fancybox="images">
+              <img src="images/insta8.jpg" alt="insta">
+            </a>
+            <a href="images/insta9-big.jpg" data-fancybox="images">
+              <img src="images/insta9.jpg" alt="insta">
+            </a>
+          </div>
+          <a href="#">Посмотреть все фотографии</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2018 free-PSD-template
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scrollup">Наверх</a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

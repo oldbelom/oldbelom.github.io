@@ -1,0 +1,197 @@
+@import '../scss/vars.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  border-radius: 2px;
+  background-color: $main;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 28px 10px;
+  border: 2px solid transparent;
+  transition: all .5s;
+
+  &:hover {
+    background-color: #fff;
+    border: 2px solid $main;
+    color: $main;
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  letter-spacing: 1.44px;
+  color: $main;
+  padding-top: 95px;
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 90px;
+  display: none;
+  background-color: $main;
+  text-indent: -9999px;
+  background-image: url(../images/icon_top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .5s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+// start modal
+#modal {
+  max-width: 656px;
+  width: 100%;
+  background-color: $main;
+  padding: 60px 0;
+
+  form {
+    max-width: 590px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    max-width: 284px;
+    width: 100%;
+
+    &::before {
+      position: absolute;
+      font-family: 'icomoon';
+      color: $main;
+      font-size: 16px;
+      left: 25px;
+      top: 22px
+    }
+  }
+
+  input {
+    margin-bottom: 20px;
+    height: 70px;
+    width: 100%;
+    padding-left: 52px;
+    padding-right: 40px;
+    display: block;
+    max-width: 284px;
+    color: $main;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    border: none;
+  }
+
+  button[type=submit] {
+    width: 161px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $main;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: auto;
+    transition: all .5s;
+    &:hover{
+      background-color: $main;
+      color: #fff;
+      border: 3px solid #fff;
+    }
+  }
+
+  .apply__courses {
+    max-width: 100%;
+
+    input {
+      max-width: 100%;
+      padding-left: 22px;
+    }
+  }
+}
+
+.apply__first-name::before {
+  content: "\f007";
+}
+
+.apply__last-name::before {
+  content: "\f007";
+}
+
+.apply__email::before {
+  content: "\f0e0";
+}
+
+.apply__phone::before {
+  content: "\f095";
+}
+// end modal
+
+
+// Footer fixed to the bottom
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}

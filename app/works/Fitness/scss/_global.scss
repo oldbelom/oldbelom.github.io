@@ -1,0 +1,88 @@
+@import '../scss/vars.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: $text;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.btn {
+  padding: 8px 28px;
+  background-color: $main;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.4px;
+  transition: all $speed;
+
+  &:hover {
+    background: #fff;
+    color: $main;
+    box-shadow: inset 0 0 0 5px $main;
+  }
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 30px;
+
+  span {
+    color: $main;
+  }
+}
+
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  display: none;
+  background-color: blue;
+  text-indent: -9999px;
+  background: url(../images/icon_top.png) no-repeat;
+  transition: all $speed;
+
+  &:hover {
+    opacity: 1;
+  }
+}
