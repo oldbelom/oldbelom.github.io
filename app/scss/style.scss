@@ -39,15 +39,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 .tech-item{
-  width: calc(25% - 50px);
+  width: 10%;
   margin-bottom: 50px;
   text-align: center;
   img{
-    width: auto;
-    height: 150px;
-    display: inline-block;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
 
@@ -56,9 +57,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: -50px;
 }
 .works-item{
   max-width: calc(25% - 50px);
+  margin-left: 50px;
   width: 100%;
   img{
     width: 100%;
