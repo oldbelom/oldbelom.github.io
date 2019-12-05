@@ -1,27 +1,60 @@
 @import '../scss/global';
 @import '../scss/vars';
 
+@mixin swipe-to-right {
+  position: relative;
+  transform: translateZ(0);
+  transition: color 1000ms;
+
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition-property: transform;
+    transition: 300ms ease-out;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+  &:hover{
+    color: $bg-color;
+  }
+
+}
+$bg-color: #031461;
+$text-color: #fff;
+$second-color: #fe619e; 
+
 h2,
 h3 {
-  color: #fff;
+  color: $text-color;
   margin-bottom: 60px;
   font-size: 40px;
+  line-height: 40px;
   text-align: center;
+
   span {
     background-size: 100% 15%;
     background-repeat: repeat-x;
     background-position: left 0% bottom 10%;
-    background-image: linear-gradient(179deg, rgb(254, 97, 158) 0%, rgb(254, 97, 158) 50%, transparent 54%, transparent 100%);
+    background-image: linear-gradient(179deg, $second-color 0%, $second-color 50%, transparent 54%, transparent 100%);
   }
 }
-
 
 #particles-js {
   height: 100%;
   width: 100%;
   top: 0;
   position: fixed;
-  background-color: #031461;
+  background-color: $bg-color;
   z-index: -1;
 }
 
@@ -30,29 +63,39 @@ h3 {
   text-align: center;
   font-size: 40px;
   font-weight: 700;
-  color: #fff;
+  color: $text-color;
   padding-top: 50px;
   margin-bottom: 90px;
-  h1 {
+
+  .header-title {
     margin-bottom: 3.5rem;
+    line-height: 4rem;
 
     span {
       background-size: 100% 15%;
       background-repeat: repeat-x;
       background-position: left 0% bottom 10%;
-      background-image: linear-gradient(179deg, rgb(254, 97, 158) 0%, rgb(254, 97, 158) 50%, transparent 54%, transparent 100%);
+      background-image: linear-gradient(179deg, $second-color 0%, $second-color 50%, transparent 54%, transparent 100%);
     }
   }
-  p{
+
+  p {
     font-size: 25px;
     line-height: 20px;
   }
 }
 
-// tech
-.tech{
-
+.btn{
+  font-size: 16px;
+  line-height: 0px;
+  padding: 20px 30px;
+  background-color: $second-color;
+  color: $text-color;
+  text-transform: uppercase;
+  @include swipe-to-right;
 }
+
+// tech
 .tech-inner {
   display: flex;
   flex-wrap: wrap;
@@ -68,7 +111,7 @@ h3 {
   img {
     width: 100%;
     height: auto;
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -85,9 +128,28 @@ h3 {
   margin-left: 50px;
   width: 100%;
 
+  &:hover img {
+    box-shadow:
+      1px 1px $second-color,
+      2px 2px $second-color,
+      3px 3px $second-color,
+      4px 4px $second-color,
+      5px 5px $second-color,
+      6px 6px $second-color,
+      7px 7px $second-color;
+    transform: translate(-7px, -5px);
+  }
+
   img {
     width: 100%;
     height: auto;
     display: block;
+    transition: all .3s;
+  }
+
+  p{
+    text-align: center;
   }
 }
+
+@import '../scss/media.scss'
